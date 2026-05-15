@@ -29,10 +29,10 @@ export class SettingsScene extends Scene {
         const width = this.m_graphics.m_canvas.width;
         const height = this.m_graphics.m_canvas.height;
 
-        const hoverEffectAudio = new Audio('./../assets/sounds/hover.mp3');
-        const clickAudioEffect = new Audio('./../assets/sounds/click.mp3');
+        const hoverEffectAudio = new Audio('./assets/sounds/hover.mp3');
+        const clickAudioEffect = new Audio('./assets/sounds/click.mp3');
 
-        const backgroundImage = new Image(); backgroundImage.src = '../../assets/images/background.jpg';
+        const backgroundImage = new Image(); backgroundImage.src = './assets/images/background.jpg';
         this.addEntity({
             components: {
                 renderable: Renderable('image', { width: width, height: height, image: backgroundImage }),
@@ -50,8 +50,8 @@ export class SettingsScene extends Scene {
 
         const arrowY = (height / 3) - 25;
 
-        const leftArrow = new Image(); leftArrow.src = '../../assets/images/arrow-left-square.svg';
-        const leftArrowFill = new Image(); leftArrowFill.src = '../../assets/images/arrow-left-square-fill.svg';
+        const leftArrow = new Image(); leftArrow.src = './assets/images/arrow-left-square.svg';
+        const leftArrowFill = new Image(); leftArrowFill.src = './assets/images/arrow-left-square-fill.svg';
         this.addEntity({
             components: {
                 position: Positionable((width / 2) - 175, arrowY),
@@ -74,8 +74,8 @@ export class SettingsScene extends Scene {
             }
         });
 
-        const rightArrow = new Image(); rightArrow.src = '../../assets/images/arrow-right-square.svg';
-        const rightArrowFill = new Image(); rightArrowFill.src = '../../assets/images/arrow-right-square-fill.svg';
+        const rightArrow = new Image(); rightArrow.src = './assets/images/arrow-right-square.svg';
+        const rightArrowFill = new Image(); rightArrowFill.src = './assets/images/arrow-right-square-fill.svg';
         this.addEntity({
             components: {
                 position: Positionable((width / 2) + 125, arrowY),
@@ -98,8 +98,8 @@ export class SettingsScene extends Scene {
             }
         });
 
-        const returnImage = new Image(); returnImage.src = '../../assets/images/arrow-left-circle-fill.svg';
-        const returnImageHover = new Image(); returnImageHover.src = '../../assets/images/arrow-left-circle.svg';
+        const returnImage = new Image(); returnImage.src = './assets/images/arrow-left-circle-fill.svg';
+        const returnImageHover = new Image(); returnImageHover.src = './assets/images/arrow-left-circle.svg';
 
         this.addEntity({
             components: {

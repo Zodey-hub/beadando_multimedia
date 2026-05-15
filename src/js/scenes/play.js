@@ -35,7 +35,7 @@ export class PlayScene extends Scene {
         this.addSystem(new CollisionSystem(this));
         this.addSystem(new RenderSystem(this.m_graphics));
 
-        const backgroundImage = new Image(); backgroundImage.src = '../../assets/images/background.jpg';
+        const backgroundImage = new Image(); backgroundImage.src = './assets/images/background.jpg';
         this.addEntity({
             components: {
                 renderable: Renderable('image', { width: width, height: height, image: backgroundImage }),
@@ -43,7 +43,7 @@ export class PlayScene extends Scene {
             }
         });
 
-        const rocketImage = new Image(); rocketImage.src = '../../assets/images/rocket-fill.svg';
+        const rocketImage = new Image(); rocketImage.src = './assets/images/rocket-fill.svg';
         this.addEntity({
             components: {
                 tag: Tag('player'),

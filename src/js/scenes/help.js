@@ -27,10 +27,10 @@ export class HelpScene extends Scene {
         const width = this.m_graphics.m_canvas.width;
         const height = this.m_graphics.m_canvas.height;
 
-        const hoverEffectAudio = new Audio('./../assets/sounds/hover.mp3');
-        const clickAudioEffect = new Audio('./../assets/sounds/click.mp3');
+        const hoverEffectAudio = new Audio('./assets/sounds/hover.mp3');
+        const clickAudioEffect = new Audio('./assets/sounds/click.mp3');
 
-        const backgroundImage = new Image(); backgroundImage.src = '../../assets/images/background.jpg';
+        const backgroundImage = new Image(); backgroundImage.src = './assets/images/background.jpg';
         this.addEntity({
             components: {
                 renderable: Renderable('image', { width: width, height: height, image: backgroundImage }),
@@ -66,8 +66,8 @@ export class HelpScene extends Scene {
             }
         });
 
-        const returnImage = new Image(); returnImage.src = '../../assets/images/arrow-left-circle-fill.svg';
-        const returnImageHover = new Image(); returnImageHover.src = '../../assets/images/arrow-left-circle.svg';
+        const returnImage = new Image(); returnImage.src = './assets/images/arrow-left-circle-fill.svg';
+        const returnImageHover = new Image(); returnImageHover.src = './assets/images/arrow-left-circle.svg';
 
         this.addEntity({
             components: {

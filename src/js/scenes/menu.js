@@ -29,10 +29,10 @@ export class MenuScene extends Scene {
         const width = this.m_graphics.m_canvas.width;
         const height = this.m_graphics.m_canvas.height;
 
-        const hoverEffectAudio = new Audio('./../assets/sounds/hover.mp3');
-        const clickAudioEffect = new Audio('./../assets/sounds/click.mp3');
+        const hoverEffectAudio = new Audio('./assets/sounds/hover.mp3');
+        const clickAudioEffect = new Audio('./assets/sounds/click.mp3');
 
-        const backgroundImage = new Image(); backgroundImage.src = '../../assets/images/background.jpg';
+        const backgroundImage = new Image(); backgroundImage.src = './assets/images/background.jpg';
         this.addEntity({
             components: {
                 renderable: Renderable('image', { width: width, height: height, image: backgroundImage }),
@@ -40,8 +40,8 @@ export class MenuScene extends Scene {
             }
         });
 
-        const codeImage = new Image(); codeImage.src = '../../assets/images/file-earmark-code-fill.svg';
-        const codeImageHover = new Image(); codeImageHover.src = '../../assets/images/file-earmark-code.svg';
+        const codeImage = new Image(); codeImage.src = './assets/images/file-earmark-code-fill.svg';
+        const codeImageHover = new Image(); codeImageHover.src = './assets/images/file-earmark-code.svg';
         this.addEntity({
             components: {
                 renderable: Renderable('image', { width: 50, height: 50, image: codeImage }),
@@ -73,8 +73,8 @@ export class MenuScene extends Scene {
             }
         });
 
-        const helpImage = new Image(); helpImage.src = '../../assets/images/question-circle-fill.svg';
-        const helpImageHover = new Image(); helpImageHover.src = '../../assets/images/question-circle.svg';
+        const helpImage = new Image(); helpImage.src = './assets/images/question-circle-fill.svg';
+        const helpImageHover = new Image(); helpImageHover.src = './assets/images/question-circle.svg';
         this.addEntity({
             components: {
                 renderable: Renderable('image', { width: 50, height: 50, image: helpImage }),
@@ -106,8 +106,8 @@ export class MenuScene extends Scene {
             }
         });
 
-        const settingsImage = new Image(); settingsImage.src = '../../assets/images/gear-fill.svg';
-        const settingsImageHover = new Image(); settingsImageHover.src = '../../assets/images/gear.svg';
+        const settingsImage = new Image(); settingsImage.src = './assets/images/gear-fill.svg';
+        const settingsImageHover = new Image(); settingsImageHover.src = './assets/images/gear.svg';
         this.addEntity({
             components: {
                 renderable: Renderable('image', { width: 50, height: 50, image: settingsImage }),
@@ -146,8 +146,8 @@ export class MenuScene extends Scene {
             }
         });
 
-        const playImage = new Image(); playImage.src = '../../assets/images/play-circle-fill.svg';
-        const playImageHover = new Image(); playImageHover.src = '../../assets/images/play-circle.svg';
+        const playImage = new Image(); playImage.src = './assets/images/play-circle-fill.svg';
+        const playImageHover = new Image(); playImageHover.src = './assets/images/play-circle.svg';
         this.addEntity({
             components: {
                 renderable: Renderable('image', { width: 100, height: 100, image: playImage }),

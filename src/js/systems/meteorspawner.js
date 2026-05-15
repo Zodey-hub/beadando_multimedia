@@ -10,7 +10,7 @@ export class MeteorSpawnerSystem {
         this.m_width = screenWidth;
         this.m_height = screenHeight;
         this.m_spawnTimer = 0;
-        this.m_starImage = new Image(); this.m_starImage.src = '../../assets/images/stars.svg';
+        this.m_starImage = new Image(); this.m_starImage.src = './assets/images/stars.svg';
     }
 
     update(entities, deltaTime) {
